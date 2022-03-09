@@ -3,6 +3,7 @@ const state = {
     favorites: [],
     info: {},
     showModal: false,
+    loader: false,
 }
 
 export default state

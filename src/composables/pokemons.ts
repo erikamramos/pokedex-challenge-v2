@@ -55,6 +55,9 @@ export function usePokemons(){
         store.dispatch('GetPokemonInfo', query)
     }
 
+    function setLoader(value) {
+        store.commit('setLoader', value);
+    }
     return {
         pokemon,
         list,
@@ -64,6 +67,7 @@ export function usePokemons(){
         isPokemonFavorite,
         setFilter,
         getPokemonsList,
-        getPokemonInfo
+        getPokemonInfo,
+        setLoader
     }
 }

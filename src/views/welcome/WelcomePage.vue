@@ -18,6 +18,7 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
 import PokeButton from '../../components/Button/Button.vue'
+import { usePokemons } from "../../composables/pokemons";
 import { useRouter } from 'vue-router';
 export default defineComponent({
     components:{
@@ -25,11 +26,16 @@ export default defineComponent({
     },
     setup() {
         const router = useRouter();
+        const { setLoader } = usePokemons();
         function redirect(){
+            setLoader(true)
+            setTimeout(() => setLoader(false), 4000);
+            
             router.push({name:'pokedex'})
         }
         return {
-            redirect
+            redirect,
+            setLoader
         }
     }
 })

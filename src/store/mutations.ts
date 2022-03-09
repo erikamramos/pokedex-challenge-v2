@@ -12,7 +12,7 @@ export default {
     showModalInfo(state, toggle){
         state.showModal = toggle;
     },
-    removeFavoritesList(state, indx){
-        console.log(indx)
-    }
+    setLoader(state, data){
+        state.loader = data;
+    },
 }
