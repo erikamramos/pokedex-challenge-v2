@@ -23,3 +23,6 @@
 - Clonar el proyecto
 - Run `npm install`
 - Run `npm run serve`
+
+## Despliegue
+- [Pokedex en Vercel](https://pokedex-challenge-v2-gamma.vercel.app/)
