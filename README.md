@@ -1,24 +1,25 @@
-# pokedex-challenge
+# Pokedex
 
-## Project setup
-```
-npm install
-```
+## Funcionalidades
+- Consumir servicios de [REST Pokemon API](https://pokeapi.co)
+- Visualizar la lista de pokemons y se recargue continuamente
+- Visualizar atributos de pokemons
+- Compartir los datos del pokemon mediante portapeles
+### Librerias
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+| Herramienta | Descripción|
+| ------------- | ------------- |
+| Vue3  | Libreria  |
+| Typescript  | Superset de javascript  |
+| Axios | Para peticiones HTTP, por la compatibilidad en navegadores|
+| Router | Enrutador entre módulos|
+| VueUse | Un conjunto de diferentes funcionalidades y utilidades|
+| Vuex | Como un almacen de datos entre componentes|
 
-### Compiles and minifies for production
-```
-npm run build
-```
 
-### Lints and fixes files
-```
-npm run lint
-```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Uso
+
+- Clonar el proyecto
+- Run `npm install`
+- Run `npm run serve`
